@@ -1,0 +1,66 @@
+﻿@model bicycles.Models.RegisterViewModel
+
+<div class="container">
+    <h1 style="color: red;">Bicycle Marketplace</h1>
+<br>
+    <div style="border: 2px solid black;">
+        <h3>Bike of the day!</h3>
+        <div>
+            <h1> Title $950</h1>
+            <img src="" >
+            <div>
+                jljljljljljldjfglkdjgdgjldkgjldkjgdl
+                dfgdklgjdlkgjdlkgjdlkgjdlkfgjdlkfgjdlfkgj
+                dfgdlfkjgdlkfgl
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+
+    <div style="border: 2px solid black;">
+        <form action="/login" method="post">
+            Email <input type="" name="">
+            <br>
+            Password <input type="" name="" ><br>
+
+            <button>Login</button>
+
+        </form>
+    </div>
+
+    <br>
+
+   <div style="border: 2px solid black;">
+       <form asp-controller="Home" asp-action="Register" method="post">
+           <label asp-for="FN"></label>
+           <input asp-for="FN">
+           <br>
+           <span asp-validation-for="FN" class="text-danger"></span>
+           <br>
+           <label asp-for="LN"></label>
+           <input asp-for="LN">
+           <br>
+           <span asp-validation-for="LN" class="text-danger"></span>
+           <br>
+           <label asp-for="Email"></label>
+           <input asp-for="Email">
+           <br>
+           <span asp-validation-for="Email" class="text-danger"></span>
+           <br>
+           <label asp-for="Password"></label>
+           <input asp-for="Password">
+           <br>
+           <span asp-validation-for="Password" class="text-danger"></span>
+           <br>
+           <label asp-for="ConfirmPassword"></label>
+           <input asp-for="ConfirmPassword">
+           <br>
+           <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+           <br>
+           <button type="submit">Register</button>
+           <br>
+       </form>
+   </div>
+</div>
